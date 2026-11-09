@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plum Wound and Eyewash · Product catalogue</title>
+<meta name="description" content="Plum Wound and Eyewash product sheets with 3D views, logistics data and barcodes, in Danish, English and German.">
+<!-- PREVIEW RELEASE: remove this robots tag and the #preview banner below for the final launch -->
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* Plum product catalogue. Data: data.js (generated). Fonts and libraries are self-hosted in vendor/. */
+@font-face { font-family: "Poppins"; font-weight: 400; font-display: swap; src: url("vendor/poppins-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 500; font-display: swap; src: url("vendor/poppins-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 600; font-display: swap; src: url("vendor/poppins-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 700; font-display: swap; src: url("vendor/poppins-latin-700-normal.woff2") format("woff2"); }
+:root {
+  --bg: #eef3f2; --sheet: #ffffff; --ink: #202020; --muted: #5d6866; --line: #dfe8e7;
+  --brand: #2da17f; --brand-ink: #1c7a5e; --brand-soft: #e4f2ed; --on-brand: #ffffff;
+  --warn: #8a5a00; --warn-soft: #fbf1db; --bar-bg: #ffffff; --stage: #f6f9f8;
+  --f-body: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --f-mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121816; --sheet: #1a2220; --ink: #e8efed; --muted: #9fb0ab; --line: #2c3835;
+  --brand: #4cc49c; --brand-ink: #6fd3ae; --brand-soft: #1f332d; --on-brand: #0e1a16;
+  --warn: #e8b85a; --warn-soft: #3a2e15; --stage: #202a27; color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #121816; --sheet: #1a2220; --ink: #e8efed; --muted: #9fb0ab; --line: #2c3835;
+  --brand: #4cc49c; --brand-ink: #6fd3ae; --brand-soft: #1f332d; --on-brand: #0e1a16;
+  --warn: #e8b85a; --warn-soft: #3a2e15; --stage: #202a27; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.6 var(--f-body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.rail { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-bottom: 16px; }
+.brand { font: 700 24px/1 var(--f-body); color: var(--brand); letter-spacing: -0.01em; }
+.brand small { font: 500 12px var(--f-body); color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-left: 8px; }
+.picker { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; align-items: center; }
+.picker input, .picker select { font: inherit; font-size: 14px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--sheet); color: var(--ink); }
+.picker input { width: 230px; }
+.picker select { max-width: 100%; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--sheet); }
+.seg button { font: 600 13px var(--f-body); letter-spacing: 0.02em; padding: 7px 12px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button:hover:not(:disabled) { color: var(--brand-ink); }
+.seg button[aria-pressed="true"] { background: var(--brand-ink); color: var(--on-brand); }
+.seg button:disabled { opacity: 0.45; cursor: not-allowed; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.sheet { background: var(--sheet); border: 1px solid var(--line); border-top: 4px solid var(--brand); border-radius: 10px; overflow: hidden; }
+.head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 32px; padding: 32px; }
+.eyebrow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.pill { font: 600 11px var(--f-body); letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 99px; background: var(--brand-soft); color: var(--brand-ink); }
+.pill.Phase-out, .pill.Discontinued { background: var(--warn-soft); color: var(--warn); }
+h1 { font: 600 clamp(26px, 3.6vw, 34px)/1.2 var(--f-body); letter-spacing: -0.01em; margin: 12px 0 8px; text-wrap: balance; }
+.subtitle { font-size: 17px; color: var(--muted); margin: 0 0 20px; max-width: 46ch; }
+.idrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 20px; }
+.idrow div { background: var(--sheet); padding: 10px 12px; }
+.lbl { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.desc { margin: 0 0 16px; max-width: 62ch; }
+.features { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.features li { display: flex; gap: 10px; }
+.features li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 9px; background: var(--brand); border-radius: 50%; }
+
+/* viewer */
+.stage { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.view { position: relative; width: 100%; aspect-ratio: 4 / 3; max-height: 60vh; border-radius: 8px; background: var(--stage); overflow: hidden; }
+#viewer { position: absolute; inset: 0; touch-action: none; cursor: grab; }
+#viewer:active { cursor: grabbing; }
+#fallback { position: absolute; inset: 0; }
+/* pinned to the frame: a grid/auto-sized box let the photo grow taller than the frame and crop its bottom */
+#fallback img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px 20px 36px; }
+.size-label { position: absolute; left: 10px; bottom: 8px; font: 500 12px var(--f-mono); color: var(--ink); background: var(--sheet); padding: 2px 8px; border-radius: 4px; pointer-events: none; }
+.cap { position: absolute; left: 10px; bottom: 8px; font-size: 12px; color: var(--muted); background: var(--sheet); padding: 2px 8px; border-radius: 4px; }
+.viewbtn { position: absolute; right: 8px; top: 8px; font: 500 12px var(--f-body); padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--sheet); color: var(--brand-ink); cursor: pointer; }
+.viewbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+#viewnote { font-size: 12px; color: var(--muted); }
+.hint, #viewmsg { font-size: 12px; color: var(--muted); margin: 0; }
+.thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; }
+.thumbs button { aspect-ratio: 1; border: 2px solid transparent; border-radius: 6px; background: var(--stage); padding: 0; cursor: pointer; overflow: hidden; }
+.thumbs button[aria-pressed="true"] { border-color: var(--brand); }
+.thumbs img { width: 100%; height: 100%; object-fit: contain; padding: 4px; display: block; }
+
+/* sections */
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+section { padding: 24px 32px; border-bottom: 1px solid var(--line); min-width: 0; }
+.grid section:nth-child(odd) { border-right: 1px solid var(--line); }
+section.full { grid-column: 1 / -1; border-right: 0 !important; }
+h2 { font: 600 13px var(--f-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--brand-ink); margin: 0 0 14px; }
+dl.kv { display: grid; grid-template-columns: fit-content(50%) minmax(0, 1fr); margin: 0; }
+dl.kv dt, dl.kv dd { padding: 7px 0; border-bottom: 1px solid var(--line); margin: 0; min-width: 0; }
+dl.kv dt { color: var(--muted); padding-right: 12px; overflow-wrap: anywhere; hyphens: auto; }
+dl.kv > :nth-last-child(-n+2) { border-bottom: 0; }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+td:empty::after { content: "—"; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 14px; font-size: 14px; }
+.codes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.code { border: 1px solid var(--line); border-radius: 8px; padding: 12px; }
+.code .bc { background: var(--bar-bg); border-radius: 4px; padding: 8px; margin-top: 8px; display: grid; place-items: center; }
+.code svg { max-width: 100%; height: auto; }
+.code .err { color: var(--warn); font-size: 13px; padding: 16px 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 500 13px var(--f-body); padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; }
+.warns { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.warns li { display: flex; gap: 10px; background: var(--warn-soft); color: var(--ink); padding: 8px 12px; border-radius: 6px; }
+.warns li::before { content: "!"; flex: none; width: 20px; height: 20px; display: grid; place-items: center; font: 700 13px var(--f-body); color: var(--warn); border: 2px solid var(--warn); border-radius: 50%; }
+.symbols { margin-top: 12px; }
+.docs { display: grid; gap: 8px; }
+.doc { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; color: inherit; text-decoration: none; }
+a.doc:hover { border-color: var(--brand); }
+.doc .ic { width: 36px; height: 44px; border-radius: 4px; background: var(--brand-soft); color: var(--brand-ink); display: grid; place-items: end center; padding-bottom: 6px; font: 600 10px var(--f-mono); }
+.doc .meta { font-size: 12px; color: var(--muted); }
+.doc .state { font-size: 12px; font-weight: 600; color: var(--brand-ink); }
+.doc.pending .state { color: var(--muted); font-weight: 500; }
+footer { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; padding: 16px 32px; font-size: 12px; color: var(--muted); background: var(--bg); }
+.empty { padding: 48px 32px; text-align: center; color: var(--muted); }
+#preview { background: var(--warn-soft); color: var(--warn); border: 1px dashed currentColor; border-radius: 6px; padding: 8px 12px; font-size: 13px; margin-bottom: 16px; }
+
+@media (max-width: 760px) {
+  .head { grid-template-columns: 1fr; padding: 20px; gap: 20px; }
+  .stage { order: -1; }
+  .grid { grid-template-columns: 1fr; }
+  .grid section:nth-child(odd) { border-right: 0; }
+  section { padding: 20px; }
+  footer { padding: 14px 20px; }
+  .picker { margin-left: 0; width: 100%; }
+  .picker input { flex: 1; width: auto; min-width: 0; }
+  .picker select { flex-basis: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="rail">
+    <div class="brand">Plum<small id="t-catalogue">Product catalogue</small></div>
+    <div class="picker">
+      <div class="seg" id="lang" role="group" aria-label="Language"></div>
+      <input id="q" type="search" placeholder="Search name, item no, EAN" aria-label="Search products">
+      <select id="sel" aria-label="Choose product"></select>
+    </div>
+  </div>
+  <p id="preview" role="note"></p><!-- PREVIEW RELEASE: remove for the final launch -->
+  <article id="sheet" class="sheet"></article>
+</div>
+
+<!-- persistent viewer block; moved into each sheet so the 3D renderer survives product changes -->
+<template id="stage-tpl">
+  <div class="stage" id="stage">
+    <div class="view">
+      <div id="viewer" role="img"></div>
+      <div id="fallback" hidden></div>
+      <button type="button" class="viewbtn" id="reset"></button>
+    </div>
+    <div class="viewbar">
+      <div class="seg" id="level" role="group">
+        <button type="button" data-level="photo"></button><button type="button" data-level="unit"></button><button type="button" data-level="outer"></button><button type="button" data-level="pallet"></button>
+      </div>
+      <span id="viewnote"></span>
+    </div>
+    <p class="hint" id="levelwhy" hidden></p>
+    <p class="hint" id="hint"></p>
+    <p id="viewmsg" hidden></p>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+</template>
+
+<script src="vendor/JsBarcode.all.min.js"></script>
+<script src="data.js" charset="utf-8"></script>
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
+<script type="module">
+import { levelNote } from "./models.js";
+
+const products = Array.isArray(window.PLUM_PRODUCTS) ? window.PLUM_PRODUCTS : [];
+const I = window.PLUM_I18N;
+I.PATTERNS = (I.PATTERNS || []).map(([src, flags, rep]) => [new RegExp(src, flags), rep]);
+const LANGS = I.languages.map((l) => l[0]);
+const $ = (s) => document.querySelector(s);
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const has = (v) => Array.isArray(v) ? v.length > 0 : v !== undefined && v !== null && v !== "";
+const params = new URLSearchParams(location.search);
+const NO3D = params.has("no3d");
+
+/* ---------- language ---------- */
+function startLang() {
+  const q = params.get("lang");
+  if (LANGS.includes(q)) return q;
+  try { const s = localStorage.getItem("plum-lang"); if (LANGS.includes(s)) return s; } catch (e) {}
+  return LANGS.includes(I.defaultLang) ? I.defaultLang : LANGS[0];
+}
+let lang = startLang();
+const ui = (k) => ((I.UI[lang] || {})[k] ?? I.UI.en[k] ?? k);
+function t(s) {
+  if (typeof s !== "string" || lang === "en") return s;
+  const idx = lang === "da" ? 0 : lang === "de" ? 1 : -1;
+  if (idx < 0) return s;
+  const hit = I.STR[s];
+  if (hit && hit[idx]) return hit[idx];
+  let out = s;
+  for (const [re, rep] of I.PATTERNS) if (re.test(out)) out = out.replace(re, rep[idx]);
+  return out;
+}
+const num = (s) => (lang === "en" || typeof s !== "string") ? s : s.replace(/(\d)\.(\d)/g, "$1,$2");
+
+/* ---------- 3D state ---------- */
+const stage = $("#stage-tpl").content.firstElementChild.cloneNode(true);
+// level: "photo" (real product photo, the default) or a 3D view: "unit", "outer", "pallet"
+let current = null, level = "photo", viewer = null, viewerLoading = null, failed = NO3D || !webglAvailable(), photoIndex = 0;
+
+function webglAvailable() {
+  try { const c = document.createElement("canvas"); return !!(window.WebGLRenderingContext && (c.getContext("webgl2") || c.getContext("webgl"))); }
+  catch (e) { return false; }
+}
+
+function useFallback() {
+  failed = true;
+  if (viewer) { viewer.dispose(); viewer = null; }
+  showPhoto(photoIndex);
+}
+
+function ensureViewer() {
+  if (failed || viewer || viewerLoading) return viewerLoading;
+  viewerLoading = import("./viewer.js")
+    .then(({ createViewer }) => {
+      viewer = createViewer(stage.querySelector("#viewer"), { lang, onFallback: useFallback });
+      viewerLoading = null;
+      refreshView();
+    })
+    .catch((e) => { console.error(e); viewerLoading = null; useFallback(); });
+  return viewerLoading;
+}
+
+// three.js loads only when a 3D view is chosen
+const levelWhy = (p, lv) => (lv === "photo" ? null : levelNote(p, lv));
+
+function photoHtml(i) {
+  const imgs = (current && current.images) || [];
+  const img = imgs[i] || imgs[0];
+  return img ? `<img src="${esc(img.src)}" alt="${esc(t(img.caption) || "")}">${img.caption ? `<span class="cap">${esc(t(img.caption))}</span>` : ""}` : "";
+}
+
+function refreshView() {
+  const p = current;
+  if (!p) return;
+  if (failed) level = "photo";
+  const want3d = level !== "photo";
+  if (want3d && !viewer) ensureViewer();
+  // while the 3D viewer loads, the stage keeps showing a photo instead of an empty box
+  const in3d = want3d && !!viewer;
+  if (!in3d) stage.querySelector("#fallback").innerHTML = photoHtml(want3d ? 0 : photoIndex);
+  const reasons = failed ? [] : [...stage.querySelectorAll("#level button")]
+    .map((b) => [b.dataset.level, levelWhy(p, b.dataset.level)]).filter(([, why]) => why)
+    .map(([lv, why]) => `${ui(lv)}: ${ui(why)}`);
+  stage.querySelector("#levelwhy").textContent = reasons.join(" · ");
+  stage.querySelector("#levelwhy").hidden = !reasons.length;
+  stage.querySelector("#viewer").hidden = !in3d;
+  stage.querySelector("#fallback").hidden = in3d;
+  stage.querySelector("#reset").hidden = !in3d;
+  stage.querySelector("#level").hidden = failed;
+  stage.querySelector("#hint").hidden = !in3d;
+  stage.querySelector("#viewmsg").hidden = !failed;
+  stage.querySelector("#viewmsg").textContent = ui("no3d");
+  stage.querySelectorAll("#level button").forEach((b) => {
+    const why = levelWhy(p, b.dataset.level);
+    b.disabled = !!why;
+    b.title = why ? ui(why) : "";
+    b.setAttribute("aria-pressed", b.dataset.level === level);
+  });
+  stage.querySelectorAll("#thumbs button").forEach((b) => b.setAttribute("aria-pressed", level === "photo" && +b.dataset.i === photoIndex));
+  stage.querySelector("#viewnote").textContent = "";
+  if (in3d && viewer) {
+    const shownId = p.id, shownLevel = level;
+    viewer.show(p, level).then(({ note }) => {
+      if (current !== p || level !== shownLevel || p.id !== shownId) return;
+      stage.querySelector("#viewnote").textContent = note ? ui(note) : "";
+    });
+  }
+}
+
+function showPhoto(i) {
+  photoIndex = i;
+  level = "photo";
+  refreshView();
+}
+
+stage.querySelector("#level").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-level]");
+  if (!b || b.disabled) return;
+  level = b.dataset.level;
+  refreshView();
+});
+stage.querySelector("#reset").addEventListener("click", () => viewer && viewer.reset());
+stage.querySelector("#thumbs").addEventListener("click", (e) => { const b = e.target.closest("button[data-i]"); if (b) showPhoto(+b.dataset.i); });
+
+function stageText() {
+  stage.querySelector("#reset").textContent = ui("reset");
+  stage.querySelector("#hint").textContent = ui("dragHint");
+  stage.querySelector("#level").setAttribute("aria-label", ui("view"));
+  stage.querySelector("#viewer").setAttribute("aria-label", current ? t(current.name) : "");
+  stage.querySelectorAll("#level button").forEach((b) => { b.textContent = ui(b.dataset.level === "unit" ? "unit3d" : b.dataset.level); });
+}
+
+/* ---------- sheet ---------- */
+function kv(rows) {
+  return `<dl class="kv">${rows.filter((r) => has(r[1])).map(([k, v]) => `<dt>${esc(t(k))}</dt><dd>${esc(num(t(v)))}</dd>`).join("")}</dl>`;
+}
+function logistics(l) {
+  const levels = [["unit", "unit"], ["inner", "inner"], ["outer", "outer"], ["pallet", "pallet"]].filter(([k]) => l[k]);
+  const rows = levels.map(([k, key]) => `<tr><td>${esc(ui(key))}</td><td class="mono">${esc(l[k].qty)}</td><td class="mono">${esc(num(t(l[k].dims)))}</td><td class="mono">${esc(num(l[k].weight))}</td></tr>`).join("");
+  const facts = [["cn", l.cnCode], ["origin", t(l.origin)], ["moq", l.moq]].filter((f) => has(f[1]))
+    .map(([k, v]) => `<span><span class="lbl">${esc(ui(k))}</span><span class="mono">${esc(v)}</span></span>`).join("");
+  return `<div class="tbl"><table><thead><tr><th>${esc(ui("level"))}</th><th>${esc(ui("qty"))}</th><th>${esc(ui("dims"))}</th><th>${esc(ui("gross"))}</th></tr></thead><tbody>${rows}</tbody></table></div>` +
+    (facts ? `<div class="facts">${facts}</div>` : "");
+}
+function docs(list, p) {
+  return `<div class="docs">${list.map((d) => {
+    let url = d.url;
+    if (lang === "de" && d.type === "Product page on plum.eu" && I.PAGE_DE && I.PAGE_DE[p.id]) url = I.PAGE_DE[p.id];
+    const ext = (url.split(".").pop() || "").slice(0, 4).toUpperCase();
+    const meta = [d.lang, d.version, d.date].filter(has).map(esc).join(" · ");
+    const inner = `<span class="ic">${url ? esc(/^[A-Z]{2,4}$/.test(ext) ? ext : "WEB") : "—"}</span><span><strong>${esc(t(d.type))}</strong><br><span class="meta">${meta || esc(ui("noVersion"))}</span></span><span class="state">${url ? esc(ui("open")) : esc(ui("pending"))}</span>`;
+    return url ? `<a class="doc" href="${esc(url)}" target="_blank" rel="noopener">${inner}</a>` : `<div class="doc pending">${inner}</div>`;
+  }).join("")}</div>`;
+}
+
+function render(p) {
+  const sheet = $("#sheet");
+  if (!p) { sheet.innerHTML = `<div class="empty">${esc(ui("noMatch"))}</div>`; return; }
+  const idCells = [["itemNo", p.itemNo], ["category", t(p.category)], ["primaryEan", p.barcodes && p.barcodes[0] && p.barcodes[0].value]]
+    .filter((c) => has(c[1])).map(([k, v]) => `<div><span class="lbl">${esc(ui(k))}</span><span class="mono">${esc(v)}</span></div>`).join("");
+  const sections = [];
+  if (has(p.specs)) sections.push(`<section><h2>${esc(ui("specs"))}</h2>${kv(p.specs)}</section>`);
+  if (has(p.terms)) sections.push(`<section><h2>${esc(ui("terms"))}</h2>${kv(p.terms)}</section>`);
+  if (p.logistics) sections.push(`<section class="full"><h2>${esc(ui("logistics"))}</h2>${logistics(p.logistics)}</section>`);
+  if (has(p.barcodes)) sections.push(`<section class="full"><h2>${esc(ui("barcodes"))}</h2><div class="codes">${p.barcodes.map((b, i) =>
+    `<div class="code"><span class="lbl">${esc(t(b.label))}</span><span class="mono">${esc(b.value)}</span><div class="bc"><svg id="bc${i}"></svg></div></div>`).join("")}</div></section>`);
+  const safe = p.safety || {};
+  if (has(safe.warnings) || has(safe.symbols)) sections.push(`<section><h2>${esc(ui("safety"))}</h2>${has(safe.warnings) ? `<ul class="warns">${safe.warnings.map((w) => `<li>${esc(t(w))}</li>`).join("")}</ul>` : ""}${has(safe.symbols) ? `<div class="chips symbols">${safe.symbols.map((s) => `<span class="chip">${esc(t(s))}</span>`).join("")}</div>` : ""}</section>`);
+  if (has(p.certifications)) sections.push(`<section><h2>${esc(ui("certs"))}</h2><div class="chips">${p.certifications.map((c) => `<span class="chip">${esc(t(c))}</span>`).join("")}</div></section>`);
+  if (has(p.documents)) sections.push(`<section class="full"><h2>${esc(ui("docs"))}</h2>${docs(p.documents, p)}</section>`);
+
+  sheet.innerHTML = `
+    <div class="head">
+      <div>
+        <div class="eyebrow">${has(p.category) ? `<span>${esc(t(p.category))}</span>` : ""}${has(p.status) ? `<span class="pill ${esc(p.status)}">${esc(t(p.status))}</span>` : ""}</div>
+        <h1>${esc(t(p.name))}</h1>
+        ${has(p.subtitle) ? `<p class="subtitle">${esc(t(p.subtitle))}</p>` : ""}
+        ${idCells ? `<div class="idrow">${idCells}</div>` : ""}
+        ${has(p.description) ? `<p class="desc">${esc(t(p.description))}</p>` : ""}
+        ${has(p.features) ? `<ul class="features">${p.features.map((f) => `<li>${esc(t(f))}</li>`).join("")}</ul>` : ""}
+      </div>
+      <div id="stage-slot"></div>
+    </div>
+    <div class="grid">${sections.join("")}</div>
+    <footer><span>Plum · ${esc(p.itemNo || "")} · ${esc(t(p.name))}</span><span>${esc(ui("updated"))} ${esc(p.lastUpdated || "—")}</span></footer>`;
+
+  $("#stage-slot").replaceWith(stage);
+  const imgs = p.images || [];
+  stage.querySelector("#thumbs").innerHTML = imgs.map((im, i) =>
+    `<button type="button" data-i="${i}" aria-pressed="false" aria-label="${esc(ui("showImage"))} ${i + 1}"><img src="${esc(im.src)}" alt=""></button>`).join("");
+  stageText();
+
+  (p.barcodes || []).forEach((b, i) => {
+    const el = document.getElementById("bc" + i);
+    try {
+      if (!window.JsBarcode) throw new Error("Barcode library did not load");
+      JsBarcode(el, b.value, { format: b.format || "EAN13", height: 60, width: 2, fontSize: 14, margin: 4, lineColor: "#000", background: "#fff", font: "monospace" });
+    } catch (e) {
+      el.outerHTML = `<div class="err">${esc(ui("barcodeErr").replace("{f}", b.format))}</div>`;
+    }
+  });
+}
+
+function show(id) {
+  const p = products.find((x) => x.id === id) || products[0];
+  const changed = p !== current;
+  current = p;
+  if (p) sel.value = p.id;
+  if (changed) {
+    // keep the chosen view when browsing; fall back to the 3D unit, then the photo
+    if (p && levelWhy(p, level)) level = levelWhy(p, "unit") ? "photo" : "unit";
+    photoIndex = 0;
+  }
+  render(p);
+  refreshView();
+}
+
+/* ---------- chrome, picker, language switch ---------- */
+const sel = $("#sel"), q = $("#q");
+$("#lang").innerHTML = I.languages.map(([code, short, name]) => `<button type="button" data-lang="${esc(code)}" lang="${esc(code)}" title="${esc(name)}" aria-label="${esc(name)}">${esc(short)}</button>`).join("");
+$("#lang").addEventListener("click", (e) => { const b = e.target.closest("button[data-lang]"); if (b && b.dataset.lang !== lang) setLang(b.dataset.lang); });
+
+function chrome() {
+  document.documentElement.lang = lang;
+  $("#t-catalogue").textContent = ui("catalogue");
+  if ($("#preview")) $("#preview").textContent = ui("preview");
+  $("#lang").setAttribute("aria-label", ui("language"));
+  q.placeholder = ui("searchPh");
+  q.setAttribute("aria-label", ui("search"));
+  sel.setAttribute("aria-label", ui("choose"));
+  $("#lang").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+}
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem("plum-lang", l); } catch (e) {}
+  try { const u = new URL(location.href); if (l === I.defaultLang) u.searchParams.delete("lang"); else u.searchParams.set("lang", l); history.replaceState(null, "", u); } catch (e) {}
+  if (viewer) viewer.setLang(l);
+  chrome();
+  fill(q.value);
+  render(current);
+  refreshView();
+}
+function fill(filter) {
+  const f = (filter || "").toLowerCase();
+  const list = products.filter((p) => !f || [p.name, t(p.name), p.itemNo, p.category, t(p.category), ...(p.barcodes || []).map((b) => b.value)].join(" ").toLowerCase().includes(f));
+  const opt = (p) => `<option value="${esc(p.id)}">${p.itemNo ? esc(p.itemNo) + " · " : ""}${esc(t(p.name))}</option>`;
+  const groups = [...new Set(list.map((p) => p.category || "Other"))];
+  sel.innerHTML = groups.map((g) => `<optgroup label="${esc(t(g))}">${list.filter((p) => (p.category || "Other") === g).map(opt).join("")}</optgroup>`).join("") || `<option value="">${esc(ui("noMatch"))}</option>`;
+  if (current && list.includes(current)) sel.value = current.id;
+  return list;
+}
+sel.addEventListener("change", () => { if (sel.value) location.hash = sel.value; });
+q.addEventListener("input", () => { const l = fill(q.value); if (l[0]) location.hash = l[0].id; });
+window.addEventListener("hashchange", () => show(location.hash.slice(1)));
+
+chrome();
+fill("");
+show(location.hash.slice(1));
+// ?debug exposes the viewer for automated checks
+if (params.has("debug")) window.__plumDebug = { get viewer() { return viewer; }, get level() { return level; }, load3d: () => ensureViewer() };
+</script>
+</body>
+</html>
